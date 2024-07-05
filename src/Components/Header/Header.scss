@@ -1,0 +1,26 @@
+@use '../../Styles/index' as *;
+@use '../../Styles/mixins' as *;
+@use '../../Styles/variables' as *;
+.header {
+    background-color: $primary-color;
+    padding: 20px;
+    
+    &__nav {
+      @include flex-center;
+      list-style: none;
+      
+      &__item {
+        margin: 0 15px;
+        
+        &__link {
+          color: white;
+          text-decoration: none;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
