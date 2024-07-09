@@ -1,14 +1,12 @@
-import React from 'react';
-import { Element } from 'react-scroll';
-import './Section.scss';
+// import React from 'react';
+// import './Section.scss';
+// import About from '../About/About';
 
-const Section = ({ id, title, children, modifier }) => {
-  return (
-    <Element name={id} className={`section section--${modifier}`}>
-      <div className="section__title">{title}</div>
-      <div className="section__content">{children}</div>
-    </Element>
-  );
-};
+// const Section = ({ id, title, children, modifier }) => {
+//   return (
+//     <About/>
+ 
+//   );
+// };
 
-export default Section;
+// export default Section;
