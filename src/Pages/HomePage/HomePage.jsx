@@ -11,32 +11,32 @@ export default function HomePage() {
      </section>
       <section id="about" className="about" title="About Us" modifier="about">
         <h2>About Us</h2>
-        About Us Content
+        About Us
         <About />
       </section>
       <section id="shows" className="shows" title="Current Shows" modifier="shows">
         <h2>Current Shows</h2>
-        Current Shows Content
+        Current Shows 
       </section>
       <section id="tickets" className="tickets" title="Tickets" modifier="tickets">
         <h2>Tickets</h2>
-        Tickets Content
+        Tickets 
       </section>
       <section id="gallery" className="gallery" title="Gallery" modifier="gallery">
         <h2>Gallery</h2>
-        Gallery Content
+        Gallery 
       </section>
       <section id="news" className="news" title="News" modifier="news">
         <h2>News</h2>
-        News Content
+        News 
       </section>
       <section id="contact" className="contact" title="Contact Us" modifier="contact">
         <h2>Contact Us</h2>
-        Contact Us Content
+        Contact Us 
       </section>
       <section id="support" className="support" title="Support Us" modifier="support">
         <h2>Support Us</h2>
-        Support Us Content
+        Support Us 
       </section>
     </div>
   );
