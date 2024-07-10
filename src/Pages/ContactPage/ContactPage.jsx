@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import './ContactPage.scss';
 
-const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_SUPPORT_ID;
-const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_SUPPORT_ID;
-const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userId = process.env.REACT_APP_EMAILJS_ID;
 
 const ContactSupportForm = () => {
   const [formData, setFormData] = useState({
