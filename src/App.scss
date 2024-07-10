@@ -1,0 +1,30 @@
+.site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; // Ensures the header stays on top of other elements
+    background-color: #fff; // Ensure background color matches the header's background
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: adds a subtle shadow for better visibility
+    width: 100%;
+  }
+  
+  .site-content {
+    margin-top: 70px; // Adjust this value to the height of your fixed header
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  

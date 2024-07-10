@@ -1,11 +1,22 @@
-import React from 'react'
-import Nav from '../Nav/Nav'
-import './Header.scss'
+import React from 'react';
+import Nav from '../Nav/Nav';
+import logo from '../../Assets/Images/54535.png';
+import './Header.scss';
 
 export default function Header() {
   return (
     <div className='header'>
-     <Nav/>
+      <div className='header_container'>
+       
+        <div className='header_title'>
+        <img src={logo} alt='logo' className='header_logo'/>
+        <h3>Canadian Broadway Presents</h3>
+
+        </div>
+<div className='header_menu'>
+        <Nav />
+        </div>
+      </div>
     </div>
-  )
+  );
 }

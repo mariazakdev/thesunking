@@ -4,14 +4,18 @@ import Footer from './Components/Footer/Footer';
 import HomePage from './Pages/HomePage/HomePage';
 import './App.scss';
 
-
 const App = () => {
   return (
-    
-    <div>
-      <Header />
-      <HomePage />
-<Footer />
+    <div className='site'>
+      <div className='site-header'>
+        <Header />
+      </div>
+      <div className='site-content'>
+        <HomePage />
+      </div>
+      <div className='site-footer'>
+        <Footer />
+      </div>
     </div>
   );
 };

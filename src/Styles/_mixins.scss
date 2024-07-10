@@ -1,6 +1,40 @@
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "variables";
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 800px;
+$breakpoint-desktop: 1024px;
+
+$breakpoint-mobile-plus1: $breakpoint-mobile + 1px;
+$breakpoint-tablet-plus1: $breakpoint-tablet + 1px;
+$breakpoint-desktop-plus1:$breakpoint-desktop + 1px;
+$breakpoint-desktop-minus1:$breakpoint-desktop - 1px;
+
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
   }
-  
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-mobile-plus1) and (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-tablet-plus1) {
+    @content;
+  }
+}
+@mixin desktop-sm {
+  @media (max-width: $breakpoint-desktop-minus1) {
+    @content;
+  }
+}
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

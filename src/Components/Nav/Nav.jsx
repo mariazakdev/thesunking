@@ -7,26 +7,22 @@ const Nav = () => {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };
+  };const headerHeight =100; 
 
   return (
     <header className="nav">
       <nav className={`nav ${isOpen ? 'open' : ''}`}>
-        <div className="logo">
-          <h3>Canadian Broadway Presents</h3>
-        </div>
+     
         <button className="nav-toggle" onClick={handleToggle}>
           {isOpen ? 'X' : 'Menu'}
         </button>
         <div className={`nav-links ${isOpen ? 'show' : ''}`}>
-          <Link to="home" smooth={true} onClick={handleToggle}>Home</Link>
-          <Link to="about" smooth={true} onClick={handleToggle}>About Us</Link>
-          <Link to="shows" smooth={true} onClick={handleToggle}>Current Shows</Link>
-          <Link to="tickets" smooth={true} onClick={handleToggle}>Tickets</Link>
-          <Link to="gallery" smooth={true} onClick={handleToggle}>Gallery</Link>
-          <Link to="news" smooth={true} onClick={handleToggle}>News</Link>
-          <Link to="contact" smooth={true} onClick={handleToggle}>Contact Us</Link>
-          <Link to="support" smooth={true} onClick={handleToggle}>Support Us</Link>
+        <Link to="home" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Home</Link>
+          <Link to="about" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>About Us</Link>
+          <Link to="team" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>The Team</Link>
+          <Link to="gallery" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Gallery</Link>
+          <Link to="contact" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Contact Us</Link>
+          <Link to="support" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Support Us</Link>
         </div>
         <div className="social-media-icons">
           {/* Add social media icons here */}
