@@ -1,33 +1,13 @@
-// @use '../../Styles/index' as *;
-// @use '../../Styles/mixins' as *;
-// @use '../../Styles/variables' as *;
+@import "../../Styles/colors";
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
 
-// .header {
-//   width: 100%;
-//   background-color: #333;
-//   color: #fff;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   &__logo {
-//     // display: block;
-//     // width: 100px;
-//     // height: 100px;
-//     // margin: 0 auto;
-//     // background-image: url('../../assets/logo.png');
-//     // background-size: cover;
-//     // background-position: center;
-//    img{
-//     width: 50px;
-//     height: auto;
-//    } 
-//   }
-
-// z-index: 1;
-// }
 .header {
-  background-color: #f8f9fa; // Change this to your preferred background color
-  padding: 10px 20px; // Adjust padding as needed
+  background-color: #f8f9fa; 
+  padding: 10px 20px; 
+  @include mobile {
+    padding: 10px 0px;
+  }
 
   .header_container {
     display: flex;
@@ -35,11 +15,15 @@
     justify-content: space-between;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,6,6,1) 14%, rgba(0,212,255,1) 100%);
+    @include mobile {
+     padding: 0;
+     margin: 0;
+    }
   }
 
   .header_logo {
-    width: 50px; // Adjust this to make the logo smaller
-    height: auto; // Maintain aspect ratio
+    width: 50px; 
+    height: auto; 
   }
   h3{
     color: #ffffff;
@@ -50,11 +34,24 @@
     align-items: center;
     justify-content: center;
     margin-left: 5rem;
+    @include tablet {
+      margin-left: 1rem;
+    }
+    @include mobile {
+      margin-left: 1rem;
+    }
   }
   &_menu{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 5rem;
+    @include tablet {
+      margin-right: 1rem;
+    }
+    @include mobile {
+      margin-left: 1rem;
+      padding: 0%;
+    }
   }
 }

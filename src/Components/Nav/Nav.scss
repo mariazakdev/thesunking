@@ -1,4 +1,8 @@
-.nav {
+@import "../../Styles/colors";
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +47,6 @@
     align-items: center;
     margin-left: auto;
 
-    /* Add individual styles for icons if needed */
   }
 }
 
@@ -62,6 +65,7 @@
     .nav-toggle {
       display: block;
       margin: 1rem;
+      align-self: center;
     }
 
     .nav-links {
@@ -77,11 +81,12 @@
 
     .nav.open .nav-links {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-evenly;
-      background-color: #333;
       flex-direction: column;
       padding-bottom: 1rem;
+      margin-right: 1rem;
+      padding-right: 1rem;
     }
   }
 }
