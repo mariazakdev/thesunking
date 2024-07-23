@@ -4,18 +4,22 @@ function About() {
   return (
     <div>
       <h3>
-        “Sun King" will be a large-scale theatrical production, requiring a team
-        of talented actors, dancers, musicians, set designers, and costume
-        designers. The show will feature original music composed specifically
-        for the production, intricate costumes, and stunning visual effects.
-        Overall, the production will involve over 40 artists from mixed
-        ethnicities mostly Canadians. There is a focus to have a multicultural
-        cast, reflecting Canada’s evolving mainstream audience. Compose a
-        captivating theme song for the Egyptian epic ballad, "The Sun King,"
-        that evokes a sense of grandeur, power, and ancient mystique. The music
-        should seamlessly intertwine traditional Egyptian elements with modern
-        orchestration, creating an immersive experience that complements the
-        epic narrative.
+        “Sun King" is a visually stunning and immersive theatre experience that
+        will transport audiences to ancient Egypt. Combining elements of drama,
+        music, dance, and elaborate stage design, the production will showcase
+        the story of the powerful Sun King and his journey through the Egyptian
+        pantheon.
+      </h3>
+      <h3>
+        The uniqueness of this play is its writing - as a ballad. The intent to
+        stage this play is in its uniqueness of style (it’s a ballad) and the
+        fact that it has never been produced in any part of the globe. There
+        have been only 4 known ballads covering ancient history - Ramayana,
+        Mahabharata, Iliad and Odyssey and Paradise lost. The Sun King could be
+        comparable to these genres of ancient story telling and though not
+        intended, could mimic a more modern Shakespearean format and style. The
+        language is cryptic and has several layers of meaningfulness embedded
+        within its rhyming versus and sentences.
       </h3>
     </div>
   );
