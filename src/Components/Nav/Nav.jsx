@@ -7,19 +7,19 @@ const Nav = () => {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
-  };const headerHeight =100; 
+  };
+  
+  const headerHeight = 100; 
 
   return (
     <header className="nav">
       <nav className={`nav ${isOpen ? 'open' : ''}`}>
-     
         <button className="nav-toggle" onClick={handleToggle}>
           {isOpen ? 'X' : 'Menu'}
         </button>
         <div className={`nav-links ${isOpen ? 'show' : ''}`}>
-        <Link to="home" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Home</Link>
+          <Link to="home" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Home</Link>
           <Link to="about" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>About Us</Link>
-          <Link to="team" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>The Team</Link>
           <Link to="gallery" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Gallery</Link>
           <Link to="contact" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Contact Us</Link>
           <Link to="support" smooth={true} offset={-headerHeight} duration={500} onClick={handleToggle}>Support Us</Link>

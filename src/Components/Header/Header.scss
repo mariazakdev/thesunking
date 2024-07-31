@@ -32,10 +32,11 @@
     color: #ffffff;
     margin-left: 1rem;
   }
-  &_title{
+  &_title a{
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin-left: 5rem;
     @include tablet {
       margin-left: 1rem;
