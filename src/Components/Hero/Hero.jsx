@@ -1,5 +1,7 @@
 import React from 'react';
-import img from '../../Assets/Images/fotor-ai-2024010481455.jpg';
+// import img from '../../Assets/Images/Akhenaten5.webp';
+import img from '../../Assets/Images/dunes2.webp';
+
 import './Hero.scss';
 
 function Hero() {

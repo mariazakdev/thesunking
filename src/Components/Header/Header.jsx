@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
-import logo from '../../Assets/Images/54535.png';
+import logo from '../../Assets/Images/logo2.png';
 import './Header.scss';
 
 export default function Header() {

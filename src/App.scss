@@ -26,5 +26,39 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1000; // Ensures the footer stays on top of other elements
   }
-  
+  /* Example CSS Colors */
+:root {
+  --sand-light: #f4e1c1; /* Light sand color */
+  --sand-medium: #e0c9a6; /* Medium sand color */
+  --sand-dark: #b69a79; /* Darker sand color */
+  --dune-highlight: #f0dac3; /* Highlight color for dunes */
+  --dune-shadow: #c9a78b; /* Shadow color for dunes */
+  --text-color: #3c2f2f; /* Dark text color for contrast */
+  --accent-color: #af866b; /* Accent color for buttons and links */
+}
+
+body {
+  background-color: var(--sand-light);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+header, nav, footer {
+  // background-color: var(--sand-dark);
+  color: var(--sand-light);
+}
+
+main {
+  background-color: var(--sand-medium);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--sand-light);
+}

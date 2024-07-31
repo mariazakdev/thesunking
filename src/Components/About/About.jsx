@@ -1,16 +1,17 @@
 import React from "react";
+import "./About.scss";
 
 function About() {
   return (
-    <div>
-      <h3>
+    <div className="about-component">
+      <p>
         “Sun King" is a visually stunning and immersive theatre experience that
         will transport audiences to ancient Egypt. Combining elements of drama,
         music, dance, and elaborate stage design, the production will showcase
         the story of the powerful Sun King and his journey through the Egyptian
         pantheon.
-      </h3>
-      <h3>
+      </p>
+      <p>
         The uniqueness of this play is its writing - as a ballad. The intent to
         stage this play is in its uniqueness of style (it’s a ballad) and the
         fact that it has never been produced in any part of the globe. There
@@ -20,7 +21,7 @@ function About() {
         intended, could mimic a more modern Shakespearean format and style. The
         language is cryptic and has several layers of meaningfulness embedded
         within its rhyming versus and sentences.
-      </h3>
+      </p>
     </div>
   );
 }

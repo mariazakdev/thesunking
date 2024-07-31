@@ -1,20 +1,41 @@
 .homepage {
   section {
+    position: relative; 
     padding: 20px;
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 8px;
     min-height: 50vh;
     height: auto;
+    width: 95%;
+
     @media (max-width: 768px) {
       height: auto;
     }
+
     &.home {
       background-color: #f9f9f9;
     }
 
-    &.about {
-      background-color: #f0f0f0;
+    &.about, &.gallery, &.contact, &.support {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../Assets/Images/dunes2.webp');
+        background-image: url('../../Assets/Images/sections1.png');
+
+        background-size: cover;
+        background-position: center;
+        // opacity: 0.3; 
+        z-index: 1;
+        border-radius: 8px;
+      }
+      background-color: rgba(0, 0, 0, 0.5); 
+      color: rgb(0, 0, 0); 
     }
 
     &.shows {
@@ -25,24 +46,25 @@
       background-color: #e0e0e0;
     }
 
-    &.gallery {
-      background-color: #d9d9d9;
-    }
-
     &.news {
       background-color: #d0d0d0;
     }
 
-    &.contact {
-      background-color: #c9c9c9;
-    }
-
-    &.support {
-      background-color: #c0c0c0;
-    }
-
     h2 {
       margin-top: 0;
+      position: relative; 
+      z-index: 2;
+    }
+
+  
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+    .text-content {
+      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      padding: 10px;
+      border-radius: 5px;
     }
   }
 }

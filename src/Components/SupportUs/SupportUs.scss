@@ -1,0 +1,16 @@
+.support-us{
+    color: #000000;
+  
+    &__importance-of-support{
+        padding: 20px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        height: auto;
+        width: 95%;
+    
+        @media (max-width: 768px) {
+            height: auto;
+        }
+    }
+}
