@@ -1,6 +1,7 @@
 .homepage {
   margin: 0;
   width: 100%;
+  background-color: black;
   section {
     position: relative; 
     padding: 20px;
@@ -15,7 +16,7 @@
     }
 
     &.home {
-      background-color: #f9f9f9;
+      // background-color: #f9f9f9;
     }
 
     &.about, &.gallery, &.contact, &.support {
