@@ -1,20 +1,21 @@
 @use "../../styles/index" as *;
 .section {
     padding: 60px 20px;
-    
+    font-size: 1.2rem;
+    color: #fcf2f2;
     &--home {
       background-color: #f0f0f0;
     }
     
-    &--about,
-    &--shows,
-    &--tickets,
-    &--gallery,
-    &--news,
-    &--contact,
-    &--support {
-      background-color: #fff;
-    }
+    // &--about,
+    // &--shows,
+    // &--tickets,
+    // &--gallery,
+    // &--news,
+    // &--contact,
+    // &--support {
+    //   background-color: #fff;
+    // }
     
     &__title {
       font-size: 2rem;

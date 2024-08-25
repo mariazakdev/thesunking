@@ -1,15 +1,18 @@
 
 .footer{
-    background-color: #f8f9fa; // Change this to your preferred background color
-    padding: 10px 20px; // Adjust padding as needed
+  background: linear-gradient(90deg, rgb(13, 14, 15) 0%, rgb(212, 45, 30) 50%, rgb(226, 126, 72) 100%);
+  padding: 10px 20px; // Adjust padding as needed
     z-index: 100;
-  
+  width: 100%;
+  margin: 0;
     .footer_container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: rgb(0,212,255);
-      background: linear-gradient(90deg, rgb(230, 191, 141) 0%, rgb(72, 188, 226) 30%, rgb(230, 191, 141) 100%);
+      width: 100%;
+      p{
+        color: #ffffff;
+      }
     }
   
 
