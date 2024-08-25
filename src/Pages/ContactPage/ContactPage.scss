@@ -6,27 +6,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0;
+  @include mobile {
+  align-items: flex-start;
+  }
 &__form{
     max-width: 500px;
    
 }
   @include mobile {
     padding: 15px;
-    max-width: 90%;
+   width: 80%;
   }
 
   @include tablet {
     padding: 20px;
-    // max-width: 400px;
+    width: 400px;
+    max-width: 500px;
   }
 
   @include desktop {
     padding: 25px;
-    // max-width: 500px;
+ width: 700px;
   }
 
   &__title {
@@ -102,7 +107,7 @@
   &__label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #fcf2f2;
+    color: #050505;
   }
 
   &__input, &__textarea {
