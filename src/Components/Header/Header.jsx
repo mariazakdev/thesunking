@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../../Assets/Images/logo2.png';
+import logo from '../../Assets/Images/logo3.png';
 import './Header.scss';
 
 export default function Header() {
