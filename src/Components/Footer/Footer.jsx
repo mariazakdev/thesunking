@@ -7,7 +7,8 @@ function Footer() {
     <div className='footer'>
       <div className='footer_container'>
 
-          <p>Footer Content</p>
+          <p>Copyright Baner Productions</p>
+          <>Latest Update 06/02/2025</>
       </div>
     
     </div>
