@@ -1,88 +1,89 @@
-// .gallery-content {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     overflow-x: scroll;
-//     padding: 20px;
-//     white-space: nowrap;
-//     -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
-    
-//     /* Hide scrollbar for Chrome, Safari, and Opera */
-//     &::-webkit-scrollbar {
-//       display: none;
-//     }
-    
-//     /* Hide scrollbar for IE, Edge, and Firefox */
-//     -ms-overflow-style: none;  /* IE and Edge */
-//     scrollbar-width: none;  /* Firefox */
-//   }
-  
-//   .gallery-item {
-//     flex: 0 0 auto; /* Ensures the item doesn't shrink and takes its content width */
-//     margin-right: 20px; /* Adjust the spacing between images as needed */
-//     cursor: pointer;
-//     transition: transform 0.3s ease-in-out;
 
-//   }
+// h3{
+//   color: wheat;
+// }
+// .gallery {
+//   // display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 20px;
+//   margin: 2px;
+//     overflow: hidden;
+
+// }
+
+// .gallery-content {
+//   width: auto;
+//   display: flex;
+//   // justify-content: center;
+//   // align-items: center;
+//   overflow: scroll;
+//   overflow-y: hidden;
+//   // white-space: nowrap;
+//   padding: 2px;
   
-//   .gallery-item img {
-//     max-height: 400px; /* Adjust the height as needed */
+//   // -webkit-overflow-scrolling: touch;
+
+//   // &::-webkit-scrollbar {
+//   //   display: none;
+//   // }
+// }
+
+// .gallery-item {
+//   flex: 0 0 auto;
+//   margin: 20px;
+//   cursor: pointer;
+//   transition: transform 0.3s ease-in-out;
+
+//   img {
+//     max-height: 400px;
+//     width: auto;
 //     object-fit: cover;
-//     border-radius: 10px; /* Optional: Add some styling to the images */
+//     border-radius: 10px;
 //   }
-  
-// Gallery.scss
-h3{
+
+//   &.enlarged {
+//     position: fixed;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) scale(1.5);
+//     z-index: 10;
+//     background: rgba(0, 0, 0, 0.8);
+//     padding: 10px;
+//     border-radius: 10px;
+//   }
+// }
+
+h3 {
   color: wheat;
 }
+
 .gallery {
-  // display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   margin: 2px;
-    overflow: hidden;
-
+  overflow: hidden;
 }
 
 .gallery-content {
-  width: auto;
   display: flex;
-  // justify-content: center;
-  // align-items: center;
-  overflow: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
-  // white-space: nowrap;
   padding: 2px;
-  
-  // -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 
   // &::-webkit-scrollbar {
-  //   display: none;
+  //   display: none; // hides scrollbar in webkit browsers
   // }
 }
 
 .gallery-item {
   flex: 0 0 auto;
-  margin: 20px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  margin: 10px;
 
   img {
     max-height: 400px;
     width: auto;
     object-fit: cover;
-    border-radius: 10px;
-  }
-
-  &.enlarged {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
     border-radius: 10px;
   }
 }
