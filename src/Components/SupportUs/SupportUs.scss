@@ -1,17 +1,68 @@
-.support-us{
-    color: #000000;
-    font-size: 1.2rem;
-    color: #fcf2f2;
-    &__importance-of-support{
-        padding: 20px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        height: auto;
-        width: 95%;
-    
-        @media (max-width: 768px) {
-            height: auto;
-        }
+
+.support-us__importance-of-support {
+    max-width: 1200px;       
+  margin: 0 auto;         
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  .support-text {
+    width: 50%;        /* same as .about-component */
+       color: #fcf2f2;
+  }
+
+  .support-video {
+    width: 30%;        /* same as .about-video */
+  }
+
+  .support-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+  }
+}
+
+/* TABLET — same behavior as ABOUT */
+@media (max-width: 1024px) {
+  .support-us__importance-of-support {
+    flex-direction: column;
+    align-items: center;
+
+    .support-text,
+    .support-video {
+      width: 100%;
+      max-width: 800px;
     }
+  }
+}
+
+/* PHONE — matches ABOUT exactly */
+@media (max-width: 600px) {
+  .support-us__importance-of-support {
+    padding: 12px;
+  }
+
+  .support-text {
+    text-align: center;  color: #ffffff;
+
+    p,
+    ul {
+      font-size: 0.95rem;
+    
+    }
+  }
+
+  .support-video {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .support-video video {
+    max-width: 100%;
+  }
 }

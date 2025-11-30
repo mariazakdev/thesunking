@@ -15,6 +15,7 @@ import img11 from '../../Assets/Images/Screenshot 2025-08-03 at 7.28.09 PM.png
 import img12 from '../../Assets/Images/Screenshot 2025-07-24 at 2.40.14 PM.png';
 import img13 from '../../Assets/Images/Screenshot 2025-07-24 at 2.36.01 PM.png';
 import img14 from '../../Assets/Images/Screenshot 2025-08-03 at 8.01.22 PM.png';
+import img15 from '../../Assets/Images/IMG-20251124-WA0001.jpg';
 
 
 
@@ -53,8 +54,8 @@ import './Gallery.scss';
 
 // export default Gallery;
 const images = [
-  img1, img2, img3, img4,
-  img5, img6, img7, img8, 
+ img15, img1, img2, img3,
+  img6, img7, img8, 
   img9, img10, img11, img12, 
   img13, img14
 ];
@@ -62,7 +63,7 @@ const images = [
 const Gallery = () => {
   return (
     <div className="gallery">
-      <h3>Past Productions</h3>
+      <h3>Current and Past Productions</h3>
       <div className="gallery-content">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
