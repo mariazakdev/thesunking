@@ -1,10 +1,8 @@
 import React from "react";
-import vid1 from '../../Assets/Images/VID-20251124-WA0002.mp4';
 import "./About.scss";
 
 function About() {
   return (
-    <div className="about-wrapper">
     <div className="about-component">
       <p>
         “Sun King" is a visually stunning and immersive theatre experience that
@@ -24,17 +22,6 @@ function About() {
         language is cryptic and has several layers of meaningfulness embedded
         within its rhyming versus and sentences.
       </p>
-    </div>
-       <div className="about-video">
-        <video
-          src={vid1}
-          controls
-          muted
-          loop
-          // autoPlay // 
-        />
-      </div>
-    
     </div>
   );
 }

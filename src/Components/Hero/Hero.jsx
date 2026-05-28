@@ -1,5 +1,6 @@
 import React from 'react';
-import img from '../../Assets/Images/Akhenaten-and-The-Hymn-To-The-Aten-Trips-in-Egypt.jpg';
+// import img from '../../Assets/Images/Akhenaten5.webp';
+import img from '../../Assets/Images/Hero_background.png'
 
 import './Hero.scss';
 

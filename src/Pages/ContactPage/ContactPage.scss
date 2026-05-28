@@ -2,6 +2,22 @@
 @import "../../Styles/mixins";
 @import "../../Styles/variables";
 
+// ─── Config ───────────────────────────────────────────────────────────────────
+
+$contact-color-primary:   #007bff;
+$contact-color-hover:     #0056b3;
+$contact-color-border:    #ccc;
+$contact-color-label:     #050505;
+$contact-color-title:     #333;
+$contact-color-subtitle:  #555;
+$contact-color-desc:      #666;
+$contact-color-warning:   chocolate;
+
+$contact-radius:          4px;
+$contact-textarea-height: 200px;
+
+// ─── Base ─────────────────────────────────────────────────────────────────────
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -11,16 +27,11 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 0;
+
   @include mobile {
-  align-items: flex-start;
-  }
-&__form{
-    max-width: 500px;
-   
-}
-  @include mobile {
+    align-items: flex-start;
     padding: 15px;
-   width: 80%;
+    width: 80%;
   }
 
   @include tablet {
@@ -31,13 +42,15 @@
 
   @include desktop {
     padding: 25px;
- width: 700px;
+    width: 700px;
   }
+
+  // ─── Typography ─────────────────────────────────────────────────────────────
 
   &__title {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
+    color: $contact-color-title;
 
     @include mobile {
       font-size: 1.5rem;
@@ -48,7 +61,7 @@
   &__subtitle {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #555;
+    color: $contact-color-subtitle;
 
     @include mobile {
       font-size: 1.2rem;
@@ -58,9 +71,9 @@
 
   &__warning {
     font-size: 1rem;
-    color: chocolate;
-    margin-bottom: 20px;
     font-weight: 500;
+    color: $contact-color-warning;
+    margin-bottom: 20px;
 
     @include mobile {
       font-size: 0.9rem;
@@ -71,7 +84,7 @@
   &__description {
     text-align: center;
     margin-bottom: 20px;
-    color: #666;
+    color: $contact-color-desc;
 
     @include mobile {
       font-size: 0.9rem;
@@ -79,22 +92,11 @@
     }
   }
 
-  &__thank-you-message {
-    text-align: center;
-  }
+  // ─── Form ───────────────────────────────────────────────────────────────────
 
-  &__button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-
-    &:hover {
-      background-color: #0056b3;
-    }
+  &__form {
+    width: 100%;
+    max-width: 500px;
   }
 
   &__form-group {
@@ -107,30 +109,48 @@
   &__label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #050505;
+    color: $contact-color-label;
   }
 
-  &__input, &__textarea {
+  &__input,
+  &__textarea {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid $contact-color-border;
+    border-radius: $contact-radius;
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
+    transition: border-color 0.2s ease;
 
     &:focus {
-      border-color: #007bff;
+      border-color: $contact-color-primary;
       outline: none;
     }
   }
 
   &__textarea {
-    resize: vertical;
-    min-height: 200px;
+    min-height: $contact-textarea-height;
     resize: none;
   }
 
-  &__form {
-    width: 100%;
+  // ─── Actions ────────────────────────────────────────────────────────────────
+
+  &__button {
+    background-color: $contact-color-primary;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: $contact-radius;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: $contact-color-hover;
+    }
+  }
+
+  &__thank-you-message {
+    text-align: center;
   }
 }
