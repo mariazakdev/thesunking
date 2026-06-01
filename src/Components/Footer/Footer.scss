@@ -1,7 +1,10 @@
+@import "../../Styles/colors";
+@import "../../Styles/mixins";
+@import "../../Styles/variables";
 
 .footer{
   background: linear-gradient(90deg, rgb(13, 14, 15) 0%, rgb(212, 45, 30) 50%, rgb(226, 126, 72) 100%);
-  padding: 10px 20px; // Adjust padding as needed
+  padding: 10px 20px;
     z-index: 100;
   width: 100%;
   margin: 0;
@@ -13,6 +16,12 @@
       p{
         color: #ffffff;
       }
+   @include mobile {
+    flex-direction: column;
+     align-items: center;
+      justify-content:center;
+    }
+
     }
   
 

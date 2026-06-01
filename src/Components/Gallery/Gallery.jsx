@@ -1,7 +1,6 @@
 
 import img1 from '../../Assets/Images/The Sun King 1st Poster.png';
 import img2 from '../../Assets/Images/Screen Shot 2019-02-18 at 12.46.05 AM.png';
-import img3 from '../../Assets/Images/Screenshot 2025-07-16 at 1.07.29 PM.png';
 import img4 from '../../Assets/Images/Screenshot 2025-07-19 at 5.51.15 PM.png';
 import img5 from '../../Assets/Images/Screenshot 2025-07-19 at 7.56.57 AM.png';
 import img6 from '../../Assets/Images/Screenshot 2025-07-16 at 12.39.35 PM.png';
@@ -18,7 +17,7 @@ import img14 from '../../Assets/Images/Screenshot 2025-08-03 at 8.01.22 PM.png
 import './Gallery.scss';
 
 const images = [
-  img1, img2, img3, img4,
+  img1, img2, img4,
   img5, img6, img7, img8, 
   img9, img10, img11, img12, 
   img13, img14
