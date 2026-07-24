@@ -1,8 +1,6 @@
 
 import img1 from '../../Assets/Images/The Sun King 1st Poster.png';
 import img2 from '../../Assets/Images/Screen Shot 2019-02-18 at 12.46.05 AM.png';
-import img4 from '../../Assets/Images/Screenshot 2025-07-19 at 5.51.15 PM.png';
-import img5 from '../../Assets/Images/Screenshot 2025-07-19 at 7.56.57 AM.png';
 import img6 from '../../Assets/Images/Screenshot 2025-07-16 at 12.39.35 PM.png';
 import img7 from '../../Assets/Images/Screenshot 2025-08-03 at 8.01.14 PM.png';
 import img8 from '../../Assets/Images/Screenshot 2025-07-24 at 2.42.54 PM.png';
