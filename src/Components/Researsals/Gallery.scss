@@ -1,0 +1,35 @@
+
+h3 {
+  color: wheat;
+}
+
+.gallery {
+  padding: 20px;
+  margin: 2px;
+  overflow: hidden;
+  background-color: black;
+}
+
+.gallery-content {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px;
+  scroll-behavior: smooth;
+
+  // &::-webkit-scrollbar {
+  //   display: none; // hides scrollbar in webkit browsers
+  // }
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  margin: 10px;
+
+  img {
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
