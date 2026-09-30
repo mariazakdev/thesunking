@@ -8,7 +8,7 @@ import Gallery from '../../Components/Gallery/Gallery';
 import Rehearsals from '../../Components/Researsals/Rehearsals'; 
 import SupportUs from '../../Components/SupportUs/SupportUs';
 import Videos from '../../Components/Videos/Videos';
-import Tickets from '../../Components/Tickets/Tickets';
+// import Tickets from '../../Components/Tickets/Tickets';
 import './HomePage.scss';
 
 export default function HomePage() {
