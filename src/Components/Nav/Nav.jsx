@@ -99,9 +99,11 @@ const Nav = () => {
           {isOpen ? 'X' : 'Menu'}
         </button>
         <div className={`nav-links ${isOpen ? 'show' : ''}`}>
-          <Link to="home" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Home</Link>
+          {/* <Link to="home" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Home</Link> */}
           <Link to="about" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>About</Link>
-          <Link to="tickets" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Tickets</Link>
+          {/* <Link to="tickets" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Tickets</Link> */}
+          <Link to="videos" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Videos</Link> 
+
           <Link to="rehearsals" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Updates</Link>
           <Link to="gallery" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Gallery</Link>
           <Link to="contact" className="link" smooth={true} offset={-headerHeight} duration={500} onClick={handleLinkClick}>Contact</Link>

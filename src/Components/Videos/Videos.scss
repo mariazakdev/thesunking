@@ -1,0 +1,124 @@
+h3 {
+  color: wheat;
+  text-align: center;
+}
+
+.videos-container {
+  padding: 15px;
+  margin: 0;
+
+  .videos-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+
+    .video-card {
+      flex: 1 1 280px;
+      max-width: 360px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+
+      h4 {
+        color: wheat;
+        margin: 0 0 8px 0;
+        font-size: 1rem;
+      }
+
+      .video-frame {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #000;
+
+        iframe {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+
+        .video-thumb {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+          border: 0;
+          cursor: pointer;
+          background-color: #000;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          // subtle dim so the play icon reads on any thumbnail
+          &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+            transition: background 0.2s ease;
+          }
+
+          &:hover::before,
+          &:focus-visible::before {
+            background: rgba(0, 0, 0, 0.1);
+          }
+
+          &:focus-visible {
+            outline: 2px solid wheat;
+            outline-offset: -2px;
+          }
+
+          .play-icon {
+            position: relative;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(245, 222, 179, 0.9); // wheat
+            transition: transform 0.2s ease;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 54%;
+              transform: translate(-50%, -50%);
+              border-style: solid;
+              border-width: 10px 0 10px 16px;
+              border-color: transparent transparent transparent #222;
+            }
+          }
+
+          &:hover .play-icon {
+            transform: scale(1.08);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .videos-container {
+    padding: 10px;
+
+    .videos-content {
+      gap: 8px;
+
+      .video-card {
+        max-width: 100%;
+      }
+    }
+  }
+}
